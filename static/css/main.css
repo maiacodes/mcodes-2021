@@ -1,0 +1,41 @@
+@media screen and (min-width: 800px) {
+    .center {
+        margin-left: 23vw;
+        margin-right: 23vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .center {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+body {
+    font-family: Inconsolata, monospace;
+}
+
+#page {
+    margin-top: 50px;
+}
+
+.emoji {
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}

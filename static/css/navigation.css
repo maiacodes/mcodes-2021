@@ -1,0 +1,78 @@
+#title {
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#nav-left {
+    /*    nothing lol    */
+}
+
+#nav-right {
+    align-self: center;
+}
+
+/* Navigation link dividers */
+#nav-right span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#nav-link-red {
+    color: red;
+    text-decoration: none;
+}
+
+#nav-link-red:hover {
+    color: white;
+    background-color: red;
+}
+
+#nav-link-orange {
+    color: orange;
+    text-decoration: none;
+}
+
+#nav-link-orange:hover {
+    color: white;
+    background-color: orange;
+}
+
+#nav-link-green {
+    color: green;
+    text-decoration: none;
+}
+
+#nav-link-green:hover {
+    color: white;
+    background-color: green;
+}
+
+#nav-link-purple {
+    color: mediumpurple;
+    text-decoration: none;
+}
+
+#nav-link-purple:hover {
+    color: white;
+    background-color: mediumpurple;
+}
+
+@media screen and (max-width: 800px) {
+    #nav-left {
+        flex-grow: 10;
+        text-align: center;
+    }
+    #nav-right {
+        margin-top: 10px;
+        flex-grow: 10;
+        text-align: center;
+    }
+}

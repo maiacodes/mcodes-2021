@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 300ms;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+</head>
+<body onload="document.body.style.opacity='1'" onbeforeunload="document.body.style.opacity='0'">
+<!-- Code that all your templates share, like a header -->
+<div id="page">
+    <div id="nav" class="center">
+        <div id="nav-left">
+            <a id="title" href="/">maia.codes</a>
+        </div>
+        <div id="nav-right">
+            <a href="/" id="nav-link-red">home</a>
+            <span>/</span>
+            <a href="/resume" id="nav-link-orange">resume</a>
+            <span>/</span>
+            <a href="/projects" id="nav-link-green">projects</a>
+            <span>/</span>
+            <a href="/contact" id="nav-link-purple">contact</a>
+        </div>
+    </div>
+    <hr>
+    <div class="center">
+    {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    </div>
+</div>
+
+{{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+{{ end }}
+</body>
+</html>
