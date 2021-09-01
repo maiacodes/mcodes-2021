@@ -30,6 +30,10 @@ body {
     font-size: 13px;
 }
 
+img {
+    max-width: 100%;
+}
+
 hr {
     box-sizing: content-box;
     height: 0;

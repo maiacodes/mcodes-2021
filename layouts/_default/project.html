@@ -1,0 +1,7 @@
+{{ define "main" }}
+    <h1>{{ .Params.title }}</h1>
+        <p> {{ .Content }} </p>
+{{ end }}
+
+{{ define "title" }}{{ .Params.title }}{{ end }}
+{{ define "extra head" }}<meta name="robots" content="noindex">{{ end }}
