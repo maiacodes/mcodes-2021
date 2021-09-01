@@ -9,10 +9,16 @@
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ end }} - {{ .Site.Title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/navigation.css">
+    {{ block "extra head" . }}
+    {{ end }}
+    <meta name="theme-color" content="#ffffff">
+    <meta content="{{ block "title" . }}{{ end }} - {{ .Site.Title }}" property="og:title">
+    <meta content="{{ .Site.Title }}" property="og:site_name">
+    <meta content="{{ block "description" . }}{{ end }}" property="og:description">
 </head>
 <body onload="document.body.style.opacity='1'" onbeforeunload="document.body.style.opacity='0'">
 <!-- Code that all your templates share, like a header -->
