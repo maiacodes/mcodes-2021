@@ -1,0 +1,21 @@
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.year {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.year ul {
+    padding-left: 0;
+    list-style: inside;
+}
+
+.year h2 {
+    margin-bottom: 0;
+}

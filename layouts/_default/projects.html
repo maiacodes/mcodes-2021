@@ -1,6 +1,77 @@
 {{ define "main" }}
-    <p>I haven't quite finished this page yet! Come back later...</p>
+    <p>these are the projects i'm working on currently and what i've worked on in the past</p>
+        <div id="projects">
+            <div class="year">
+                <h2>Key</h2>
+                <ul>
+                    <li>active <span class="emoji">🟢</span></li>
+                    <li>unreleased <span class="emoji">⚡️</span></li>
+                    <li>open source <span class="emoji">✨</span></li>
+                    <li>defunct <span class="emoji">🔴</span></li>
+                    <li>lost <span class="emoji">💨</span></li>
+
+                </ul>
+            </div>
+            <div class="year">
+                <h2>2021</h2>
+                <ul>
+                    <li><a href="https://assistcord.com">Assistcord</a> <span class="emoji">🟢</span></li>
+                    <li><a href="https://froggy.email">Froggy Email</a> <span class="emoji">🟢</span></li>
+                    <li><a href="https://geo.maia.codes">Geo</a> <span class="emoji">🟢✨</span></li>
+                    <li><a onclick="notice()" href="#">Trill</a> <span class="emoji">⚡️</span></li>
+                    <li><a href="https://pulsr.io">Pulsr</a> <span class="emoji">🔴</span></li>
+                </ul>
+            </div>
+            <div class="year">
+                <h2>2020</h2>
+                <ul>
+                    <li><a href="https://tweetshift.com">TweetShift</a> <span class="emoji">🟢</span></li>
+                    <li><a href="https://github.com/maiacodes/petitioncounter">PetitionCounter</a> <span class="emoji">🟢</span><span class="emoji">✨</span></li>
+                    <li><a onclick="notice()" href="#">Loom</a> <span class="emoji">⚡️</span></li>
+                    <li><a onclick="notice()" href="#">RoleFlow</a> <span class="emoji">⚡️</span></li>
+                    <li><a href="https://github.com/eutenly">Eutenly</a> <span class="emoji">🔴</span><span class="emoji">✨</span></li>
+                </ul>
+            </div>
+            <div class="year">
+                <h2>2019</h2>
+                <ul>
+                    <li><a href="https://honeybankstudios.com">Honeybank Studios</a> <span class="emoji">🟢</span></li>
+                    <li><a onclick="notice()" href="#">ArtRef</a> <span class="emoji">⚡️</span></li>
+                    <li><a onclick="notice()" href="#">Blackout</a> <span class="emoji">⚡️</span></li>
+                </ul>
+            </div>
+            <div class="year">
+                <h2>2018</h2>
+                <ul>
+                    <li><a href="https://www.spigotmc.org/resources/spigonprotect.52000/">SpigonProtect</a> <span class="emoji">🔴</span></li>
+                    <li><a onclick="notice()" href="#">Omnify</a> <span class="emoji">💨</span></li>
+                </ul>
+            </div>
+            <div class="year">
+                <h2>2017</h2>
+                <ul>
+                    <li><a onclick="notice()" href="#">T-Island</a> <span class="emoji">🔴</span></li>
+                    <li><a onclick="notice()" href="#">Mobitel</a> <span class="emoji">🔴</span></li>
+                    <li><a onclick="notice()" href="#">Kiductions</a> <span class="emoji">💨</span></li>
+                </ul>
+            </div>
+            <div class="year">
+                <h2>2016</h2>
+                <ul>
+                    <li><a href="https://github.com/maiacodes/pixelart">PixelArt</a> <span class="emoji">🔴✨</span></li>
+                    <li><a href="https://www.spigotmc.org/resources/simplistic-chat-prefix-plugin-support-1-9-support.20264/">SimplisticChat</a> <span class="emoji">🔴</span></li>
+                    <li><a href="https://www.spigotmc.org/resources/simplistic-join-message-1-11-compatible.19379/">SimplisticJoin</a> <span class="emoji">🔴</span></li>
+                    <li><a href="https://thrusted.net">Thrusted</a> <span class="emoji">💨</span></li>
+                </ul>
+            </div>
+            <div class="year">
+                <h2>Earlier</h2>
+                <p>i did have a lot of smaller projects in the past, but due to my poor memory and a few data loss incidents, they're lost to time</p>
+            </div>
+            <sub>due to an incident that occurred in 2019, a lot of my pre-2020 project files went missing</sub>
+        </div>
 {{ end }}
 
 {{ define "title" }}projects{{ end }}
-{{ define "description" }}I haven't quite finished this page yet! Come back later...{{ end }}
+{{ define "description" }}these are the projects i'm working on currently and what i've worked on in the past.{{ end }}
+{{ define "extra head" }}<link rel="stylesheet" href="/css/projects.css"><script>const notice = () => { alert("this project doesn't have a website. in the future i'll write blog posts outlining my past projects.") }</script>{{end}}
