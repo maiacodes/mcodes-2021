@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <p>this is the maia.codes blog, here you can read posts from me, maia. if i ever want to share something that's too long for a tweet, it'll end up here.</p>
+    <ul>
+        {{ range .Pages }}
+            <li>
+                <a href="{{.Permalink}}">{{.Date.Format "January 2, 2006"}} | {{.Title}}</a>
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}
+
+{{ define "title" }}blog{{ end }}
+{{ define "description" }}cool shit idk{{ end }}

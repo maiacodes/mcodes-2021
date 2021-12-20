@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <style>
+        #content {
+            font-size: 17px;
+            line-height: 1.75;
+        }
+    </style>
+        <script>
+            async function comment() {
+                const msg = prompt("Write your comment here, if you want to chat then also include your Discord or Telegram.")
+
+                await fetch("https://comment.maia.workers.dev/", {
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    method: "POST",
+                    body: JSON.stringify({
+                        article: "{{ .RelPermalink }}",
+                        comment: msg,
+                    })
+                })
+                    .then(() => {alert("Thanks, got it.")})
+                    .catch(() => {alert("Something went wrong while submitting, please contact me in a different way.")})
+            }
+        </script>
+    <h1>{{ .Params.title }}</h1>
+    <div id="content"> {{ .Content }} </div>
+        <br>
+        <a href="/blog"><span class="emoji">👈</span> go backwards</a> | <a target="_blank" href="https://twitter.com/intent/tweet?url=https://maia.codes{{ .RelPermalink }}&text='{{ .Params.title }}' by @returnmaia "><span class="emoji">🐦</span> share on twitter</a> | <a href="javascript:comment()"><span class="emoji">📝</span> leave a note for me</a>
+        <br><br><sup>This post was published on {{.Date.Format "January 2, 2006"}} exclusively on maia.codes. All rights reserved.</sup>
+{{ end }}
+
+{{ define "title" }}{{ .Params.title }}{{ end }}
+{{ define "extra head" }}{{ end }}
