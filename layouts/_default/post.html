@@ -9,19 +9,22 @@
             async function comment() {
                 const msg = prompt("Write your comment here, if you want to chat then also include your Discord or Telegram.")
 
-                await fetch("https://comment.maia.workers.dev/", {
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Accept": "application/json"
-                    },
-                    method: "POST",
-                    body: JSON.stringify({
-                        article: "{{ .RelPermalink }}",
-                        comment: msg,
+                if (!!msg) {
+                    await fetch("https://comment.maia.workers.dev/", {
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json"
+                        },
+                        method: "POST",
+                        body: JSON.stringify({
+                            article: "{{ .RelPermalink }}",
+                            comment: msg,
+                        })
                     })
-                })
-                    .then(() => {alert("Thanks, got it.")})
-                    .catch(() => {alert("Something went wrong while submitting, please contact me in a different way.")})
+                        .then(() => {alert("Thanks, got it.")})
+                        .catch(() => {alert("Something went wrong while submitting, please contact me in a different way.")})
+                }
+
             }
         </script>
     <h1>{{ .Params.title }}</h1>
