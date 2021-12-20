@@ -7,9 +7,10 @@ date: 2021-12-19
 It's that time very year that I decide I'm going to start blogging 
 again, but this year, I see it differently. When I was programming 
 this website I made a decision not to build a blogging system into 
-it, because every time I started blogging as a hobby in the pat, I 
+it, because every time I started blogging as a hobby in the past, I 
 would get crushed because simply nobody would even bother looking 
-at it. But over the past year, I've become much more acquainted 
+at my posts. But over the past 3 years, I've become much more 
+acquainted 
 with Twitter, and every day I use the little platform I have to 
 speak out about things I find interesting, from programming, to 
 LGBTQ+ issues, to politics.
@@ -21,7 +22,7 @@ great satisfaction, I am a very opinionated person, and writing is
 something passionate and close to my heart. Which leads me to 
 this: Twitter is a mess, and it's not a good place for healthy 
 communication and discussion. I cannot write what I'd like to 
-write on Twitter, just because of how hard it is to write 
+write on Twitter, just because of how hard it is to speak 
 extensively, and how easily people get riled up. At least on my 
 own site, things are a lot more calm, and I can have honest 
 discussions with you guys, more safely.
