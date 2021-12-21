@@ -26,7 +26,7 @@ For example, [the vast majority](https://www.theguardian.com/education/2011/jan/
 require that students wear a school uniform, which if 
 you think about for more than 5 minutes, is an incredibly 
 ridiculous and antiquated system. In the modern workplace, most 
-people aren't required to wear a suite and tie to work, are they? 
+people aren't required to wear a suit and tie to work, are they? 
 Heck, in most of the tech industry you'd be considered trendy for 
 coming to work in pyjamas. Whenever students even try to question 
 these concepts, they always get brushed away with *"We're preparing 
