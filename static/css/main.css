@@ -21,6 +21,10 @@ body {
     font-family: Inconsolata, monospace;
 }
 
+p {
+    line-height: 20px;
+}
+
 #page {
     margin-top: 50px;
 }
